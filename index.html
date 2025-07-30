@@ -1,29 +1,120 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYOE html>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <title>Cocobear.ai – Your Small Business Sidekick</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
     <style>
-        body { margin: 0; font-family: sans-serif; background: #ffffff; color: #333; }
-        header, footer { text-align: center; padding: 2rem; }
-        .hero { padding: 4rem 2rem; background: #f7f9fb; }
-        .hero h1 { font-size: 2rem; margin-bottom: 0.5rem; }
-        .hero p { font-size: 1.25rem; margin-bottom: 1.5rem; }
-        .cta-button { background: #1dadb9; color: white; border: none; padding: 1rem 2rem; font-size: 1rem; cursor: pointer; border-radius: 5px; }
-        .features, .audience { padding: 2rem; max-width: 800px; margin: auto; }
-        .features h2, .audience h2 { font-size: 1.5rem; margin-bottom: 1rem; }
-        .feature-block { margin-bottom: 1rem; }
-        .feature-block strong { display: block; font-size: 1.1rem; margin-top: 0.5rem; }
-        .final-cta { background: #1dadb9; color: white; padding: 3rem 2rem; text-align: center; }
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: #ffffff;
+            color: #333;
+        }
+        header, footer {
+            text-align: center;
+            padding: 2rem;
+        }
+        nav {
+            text-align: center;
+            padding: 1rem;
+        }
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #0077cc;
+            font-weight: 600;
+        }
+        .hero {
+            padding: 4rem 2rem;
+            background: #f7f9fb;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+        .cta-button {
+            background: #1dadb9;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .cta-button:hover {
+            background-color: #128996;
+            transform: scale(1.05);
+            transition: all 0.3s ease;
+        }
+        .features, .audience {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .features h2, .audience h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .feature-grid {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .feature-block {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 1.5rem;
+            border-radius: 10px;
+            width: 280px;
+            text-align: center;
+        }
+        .feature-block strong {
+            display: block;
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+        .final-cta {
+            background: #1dadb9;
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        .final-cta h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        footer {
+            background: #f2f2f2;
+            color: #666;
+            padding: 2rem;
+            font-size: 0.9rem;
+        }
+        img.logo {
+            width: min(30vw, 150px);
+            max-width: 100%;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="IMG_1297.PNG" alt="Cocobearai Logo" style="width: 120px;">
+    <img src="logo.png" alt="Cocobear Logo" class="logo">
 </header>
+
+<nav>
+    <a href="#features">Features</a>
+    <a href="#audience">Who It's For</a>
+    <a href="#cta">Join Waitlist</a>
+</nav>
 
 <section class="hero">
     <h1>Your Small Business Sidekick</h1>
@@ -31,28 +122,31 @@
     <button class="cta-button">Join the Waitlist</button>
 </section>
 
-<section class="features">
+<section class="features" id="features">
     <h2>Why Cocobear?</h2>
-    <div class="feature-block"> <strong>Smarter Work</strong> Automate daily tasks and free up your time.</div>
-    <div class="feature-block"> <strong>No Tech Stress</strong> Simple, clean tools built just for you.</div>
-    <div class="feature-block"> <strong>Real-World Pricing</strong> AI support without the startup-level pricing.</div>
+    <div class="feature-grid">
+        <div class="feature-block">🤖 <strong>Smarter Work</strong> Automate daily tasks and free up your time.</div>
+        <div class="feature-block">💡 <strong>No Tech Stress</strong> Simple, clean tools built just for you.</div>
+        <div class="feature-block">💰 <strong>Real-World Pricing</strong> AI support without the startup-level pricing.</div>
+    </div>
 </section>
 
-<section class="audience">
+<section class="audience" id="audience">
     <h2>Built for business owners who do it all.</h2>
-    <p>Whether you're solo or managing a growing team, Cocobear is your behind-the-scenes sidekick — always on, always helpful.</p>
+    <p style="text-align: center;">Whether you're solo or managing a growing team, Cocobear is your behind-the-scenes sidekick — always on, always helpful.</p>
 </section>
 
-<section class="final-cta">
+<section class="final-cta" id="cta">
     <h2>Ready to take the pressure off?</h2>
     <p>Let Cocobear help you work smarter.</p>
     <button class="cta-button">Join the Waitlist</button>
 </section>
 
 <footer>
-    <p>contact@cocobear.ai</p>
-    <p>Built with ❤️ by Cocobear.ai | Operated by ASOEA Holdings LLC. All rights reserved.</p>
+    <p>support@cocobear.ai</p>
+    <p>Built with ❤️ by Cocobear.ai | A division of ASOEA Holdings LLC</p>
 </footer>
 
-</body>
-</html>
+
+
+</body></html>
